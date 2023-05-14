@@ -1,0 +1,112 @@
+#footer{
+    padding-top: 31px;
+    background-color: #1B262F;
+    background-image: url('../../img/footer-bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    height: 100px;
+
+}
+.footer__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+
+}
+.footer__logo{
+    max-width: 135px;
+    margin-right: 64px;
+    flex-shrink: 0;
+}
+.footer__list{
+    display: flex;
+    margin-right: 560px;
+}
+
+.footer__item + .footer__item{
+    margin-left: 40px;
+}
+.footer__link{
+    max-width: 51px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FBFCFE;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+.footer__img-block{
+    max-width: 24px;
+    display: flex;
+    margin-right: 24px;
+}
+
+@media screen and (max-width:1137px){
+    .footer__list {
+        margin-right: 340px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .footer__list {
+        margin-right: 270px;
+    }
+}
+
+@media screen and (max-width:837px){
+    .footer__list {
+        margin-right: 150px;
+    }
+}
+@media screen and (max-width:720px){
+    .footer__list {
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width:666px){
+    .footer__list {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:595px){
+    #footer {
+        height: 353px;
+        background-image: url('../../img/background-footer.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+    }
+    .footer {
+        flex-direction: column;
+        display: inline;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .footer__logo{
+        margin-bottom: 43px;
+    }
+    .footer__list{
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .footer__item{
+        max-width: 58px;
+    }
+    .footer__link{
+        margin-bottom: 31px;
+        text-align: center;
+    }
+    
+    .footer__img-block{
+        margin-top: 41px;
+        display: inline-block;
+    }
+    
+}
+

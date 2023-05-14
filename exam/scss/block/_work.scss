@@ -1,0 +1,116 @@
+#work {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    background-color: #1B262F;
+    background-repeat: no-repeat;
+    background-image: url('../../img/bg-works.svg');
+}
+.work__container{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.work__title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    font-family: $font2;
+    color: #FBFCFE;
+    margin-bottom: 24px;
+    
+}
+.work__text{
+    max-width: 445px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FBFCFE;  
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    margin-bottom: 32px;
+}
+.work__btn{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    padding: 16px 32px 14px 32px;
+    color: #FBFCFE;
+    background-color: #36536B;
+    border: 1px solid #FBFCFE;
+    border-radius: 24px;
+}
+.work__img-block{
+    max-width: 96px;
+}
+.work__list{
+    padding-top: 22px;
+    max-width: 536px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+}
+@media screen and (max-width: 1049px){
+    #work{
+        background-image: url('../../img/header-background.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .work__container{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .work__list{
+        justify-content: center;
+        margin-bottom: 64px;
+
+    }
+    .work__title{
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        letter-spacing: -0.369231px;
+        color: #FBFCFE;
+        margin-bottom: 24px;
+    }
+    .work__text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        color: #FBFCFE;    
+        mix-blend-mode: normal;
+        opacity: 0.7;
+        margin-bottom: 32px;
+    }
+    .work__content{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 595px){
+    .work__list{
+        display: grid;
+        grid-template-columns: 145px 145px;
+    }
+    .work__title{
+        max-width: 327px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .work__text{
+        max-width: 330px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .work__btn{
+        background-color: #1B262F;
+    }
+}
+
+

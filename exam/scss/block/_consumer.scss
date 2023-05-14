@@ -1,0 +1,111 @@
+
+
+.consumer__list{
+    max-width: 1015px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.consumer__item{
+    max-width: 350px;
+    text-align: center;
+    &::before{
+     content: "";
+     width: 106px;
+     height: 106px;
+     display: inline-block;
+     margin-bottom: 32px;
+     background-repeat: no-repeat;
+    }
+    &:nth-child(1)::before{
+     background-image: url('../../img/personal.svg');
+    }
+    &:nth-child(2)::before{
+     background-image: url('../../img/banking.svg');
+    }
+    &:nth-child(3)::before{
+     background-image: url('../../img/consumer.svg');
+    }
+ }
+ .consumer__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.138462px;
+    max-width: 350px;
+    color: #36536B;
+    margin-bottom: 16px;
+ }
+ .consumer__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    max-width: 350px;
+    color: #6C8294;
+    
+     
+ }
+ @media screen and (max-width: 720px) {
+    .consumer__list{
+        max-width: 1115px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .consumer__item{
+        max-width: 223px;
+        &::before{
+            content: "";
+            width: 88px;
+            height: 88px;
+            display: inline-block;
+            margin-bottom: 32px;
+            background-repeat: no-repeat;
+           }
+    }
+    .consumer__title{
+        font-size: 18px;
+        line-height: 25px;
+        max-width: 223px;
+    }
+    .consumer__text{
+        max-width: 223px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+ }
+ @media screen and (max-width: 595px) {
+    .consumer__list{
+        flex-direction: column;
+        min-width: 328px;
+    }
+    .consumer__item{
+        margin-bottom: 48px;
+        max-width: 328px;
+    }
+    .consumer__title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.138462px;
+        max-width: 350px;
+        color: #36536B;
+        margin-bottom: 16px;
+     }
+     .consumer__text{
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: -0.115385px;
+        max-width: 350px;
+        color: #6C8294;
+        
+         
+     }
+ }

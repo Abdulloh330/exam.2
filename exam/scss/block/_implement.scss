@@ -1,0 +1,47 @@
+#implement{
+    padding-top: 150px;
+}
+.implement__container{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.implement__img-block{
+    max-width: 445px;
+}
+.implement__title{
+    font-family: $font2;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;   
+    color: #36536B;
+    max-width: 445px;
+    
+}
+.implement__text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+    max-width: 445px;
+}
+@media screen and (max-width: 720px){
+    .implement__container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .implemnt__contant{
+        text-align: center;
+    }
+    .implement__title{
+        max-width: 573px;
+        margin-bottom: 24px;
+    }
+    .implement__text{
+        max-width: 573px;
+    }
+    .implement__img-block{
+        max-width: 410px;
+    }
+}
